@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Find Your Stay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <i class="fa-brands fa-airbnb"></i> airbnb
+        </a>
+
+        <nav>
+            <a href="#properties" class="active">Stays</a>
+            <a href="#destinations">Experiences</a>
+            <a href="#destinations">Online Experiences</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="#footer" class="host-link">Become a host</a>
+            <a href="#search" class="login">Log In</a>
+            <a href="#search" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+        <form class="search-bar" action="#properties">
+            <div class="search-item">
+                <label for="location">Where</label>
+                <input type="text" id="location"
+                    placeholder="Search destinations">
+            </div>
+
+            <div class="search-item">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin">
+            </div>
+
+            <div class="search-item">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout">
+            </div>
+
+            <div class="search-item">
+                <label for="guests">Who</label>
+                <select id="guests">
+                    <option>1 guest</option>
+                    <option selected>2 guests</option>
+                    <option>3 guests</option>
+                    <option>4 guests</option>
+                    <option>5+ guests</option>
+                </select>
+            </div>
+
+            <button class="search-btn" type="submit"
+                aria-label="Search properties">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+            <h1>Find your place<br>in the world.</h1>
+            <p>Discover unique homes, beautiful escapes, and
+                unforgettable stays around the world.</p>
+            <a href="#destinations" class="hero-btn">
+                Explore destinations
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="section" id="destinations">
+        <div class="section-heading">
+            <div>
+                <h2>Popular destinations</h2>
+                <p>Places guests love to explore</p>
+            </div>
+            <a href="#properties" class="view-all">Explore stays →</a>
+        </div>
+
+        <div class="destination-grid">
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                    alt="Goa beach">
+                <div class="card-info">
+                    <h3>Goa, India</h3>
+                    <p>Sunny beaches and coastal escapes</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80"
+                    alt="Kerala landscape">
+                <div class="card-info">
+                    <h3>Munnar, India</h3>
+                    <p>Tea gardens and misty mountains</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80"
+                    alt="Mountain scenery">
+                <div class="card-info">
+                    <h3>Manali, India</h3>
+                    <p>Mountain adventures and fresh air</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=700&q=80"
+                    alt="Italian coastal village">
+                <div class="card-info">
+                    <h3>Italy</h3>
+                    <p>Charming villages and local culture</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80"
+                    alt="Dubai skyline">
+                <div class="card-info">
+                    <h3>Dubai, UAE</h3>
+                    <p>Modern luxury and city experiences</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=700&q=80"
+                    alt="Tropical travel destination">
+                <div class="card-info">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Tropical retreats and island living</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="section" id="properties">
+        <div class="section-heading">
+            <div>
+                <h2>Featured stays</h2>
+                <p>Find somewhere special to stay</p>
+            </div>
+        </div>
+
+        <div class="property-grid">
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+                        alt="Luxury pool villa">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Luxury Pool Villa</h3>
+                        <span>★ 4.95</span>
+                    </div>
+                    <p>North Goa, India</p>
+                    <p>Mountain and pool views</p>
+                    <p class="price">₹8,500 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=80"
+                        alt="Woodland cabin">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Woodland Cabin</h3>
+                        <span>★ 4.89</span>
+                    </div>
+                    <p>Munnar, India</p>
+                    <p>Surrounded by greenery</p>
+                    <p class="price">₹4,200 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern glass house">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Modern Glass House</h3>
+                        <span>★ 4.92</span>
+                    </div>
+                    <p>Coorg, India</p>
+                    <p>Peaceful countryside retreat</p>
+                    <p class="price">₹6,000 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                        alt="Designer apartment interior">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Designer Apartment</h3>
+                        <span>★ 4.87</span>
+                    </div>
+                    <p>Bengaluru, India</p>
+                    <p>Stylish city living</p>
+                    <p class="price">₹3,500 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
+                        alt="Tropical resort">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Tropical Resort</h3>
+                        <span>★ 4.98</span>
+                    </div>
+                    <p>Varkala, India</p>
+                    <p>Near the beautiful coastline</p>
+                    <p class="price">₹7,200 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80"
+                        alt="Mountain cottage">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Mountain Cottage</h3>
+                        <span>★ 4.91</span>
+                    </div>
+                    <p>Wayanad, India</p>
+                    <p>Quiet stay in the hills</p>
+                    <p class="price">₹5,000 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+                        alt="Elegant family home">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Elegant Family Home</h3>
+                        <span>★ 4.85</span>
+                    </div>
+                    <p>Kochi, India</p>
+                    <p>Comfortable family getaway</p>
+                    <p class="price">₹4,800 <span>/ night</span></p>
+                </div>
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                        alt="Luxury hillside home">
+                    <button class="heart" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-info">
+                    <div class="property-title">
+                        <h3>Hilltop Escape</h3>
+                        <span>★ 4.90</span>
+                    </div>
+                    <p>Ooty, India</p>
+                    <p>Scenic views and fresh air</p>
+                    <p class="price">₹5,500 <span>/ night</span></p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Support</h3>
+                <a href="#footer">Help Centre</a>
+                <a href="#footer">Safety information</a>
+                <a href="#footer">Cancellation options</a>
+            </div>
+
+            <div>
+                <h3>Hosting</h3>
+                <a href="#footer">Airbnb your home</a>
+                <a href="#footer">Hosting resources</a>
+                <a href="#footer">Community forum</a>
+            </div>
+
+            <div>
+                <h3>Airbnb</h3>
+                <a href="#footer">About us</a>
+                <a href="#footer">Newsroom</a>
+                <a href="#footer">Careers</a>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <a href="#footer">Privacy</a>
+                <a href="#footer">Terms</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Airbnb Homepage Clone. Made for learning.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com/" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
