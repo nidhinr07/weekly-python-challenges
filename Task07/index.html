@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Discover Great Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">zomato</a>
+
+        <form class="nav-search" action="#restaurants">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search restaurants"
+                aria-label="Search restaurants">
+        </form>
+
+        <div class="nav-actions">
+            <a href="#offers">Add Restaurant</a>
+            <a href="#footer" class="login-btn">Log In</a>
+            <a href="#footer" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <form class="main-search" action="#restaurants">
+            <div class="location-input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Enter your location"
+                    aria-label="Location">
+            </div>
+
+            <span class="search-divider"></span>
+
+            <div class="dish-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search"
+                    placeholder="Search restaurants or dishes"
+                    aria-label="Search restaurants or dishes">
+            </div>
+
+            <button type="submit" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+        </form>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">GOOD FOOD. GOOD MOOD.</p>
+            <h1>Discover the Best<br>Food Near You</h1>
+            <p>From local favourites to exciting new flavours,
+                find your next delicious meal.</p>
+            <a href="#restaurants" class="hero-btn">
+                Explore Restaurants
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="section" id="categories">
+        <div class="section-heading">
+            <div>
+                <h2>Explore food categories</h2>
+                <p>What are you craving today?</p>
+            </div>
+        </div>
+
+        <div class="category-grid">
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                    alt="Juicy burger">
+                <div class="card-text">
+                    <h3>Burgers</h3>
+                    <p>Big flavour in every bite</p>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=600&q=80"
+                    alt="Freshly baked pizza">
+                <div class="card-text">
+                    <h3>Pizza</h3>
+                    <p>Cheesy and delicious</p>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
+                    alt="Italian pizza">
+                <div class="card-text">
+                    <h3>Italian</h3>
+                    <p>Classic Italian flavours</p>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80"
+                    alt="Asian noodles">
+                <div class="card-text">
+                    <h3>Noodles</h3>
+                    <p>A bowl full of comfort</p>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                    alt="Delicious food platter">
+                <div class="card-text">
+                    <h3>Fast Food</h3>
+                    <p>Quick bites, big smiles</p>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
+                    alt="Grilled food">
+                <div class="card-text">
+                    <h3>Grills</h3>
+                    <p>Smoky and satisfying</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Popular Restaurants -->
+    <section class="section" id="restaurants">
+        <div class="section-heading">
+            <div>
+                <h2>Popular restaurants</h2>
+                <p>Discover delicious food near you</p>
+            </div>
+            <a href="#restaurants" class="view-all">View all →</a>
+        </div>
+
+        <div class="restaurant-grid">
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80"
+                        alt="Burger and fries">
+                    <span class="discount">40% OFF</span>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Burger Junction</h3>
+                        <span class="rating">4.5 ★</span>
+                    </div>
+                    <p>American, Burgers, Fast Food</p>
+                    <div class="restaurant-meta">
+                        <span>₹300 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh pizza">
+                    <span class="discount">20% OFF</span>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Pizza Corner</h3>
+                        <span class="rating">4.3 ★</span>
+                    </div>
+                    <p>Pizza, Italian, Beverages</p>
+                    <div class="restaurant-meta">
+                        <span>₹450 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 30 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"
+                        alt="Indian curry">
+                    <span class="discount">30% OFF</span>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Spice Garden</h3>
+                        <span class="rating">4.6 ★</span>
+                    </div>
+                    <p>North Indian, Mughlai</p>
+                    <div class="restaurant-meta">
+                        <span>₹500 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 35 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80"
+                        alt="Noodles in a bowl">
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Asian Bowl</h3>
+                        <span class="rating">4.2 ★</span>
+                    </div>
+                    <p>Chinese, Asian, Noodles</p>
+                    <div class="restaurant-meta">
+                        <span>₹350 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+                        alt="Italian pizza">
+                    <span class="discount">25% OFF</span>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Oven Stories</h3>
+                        <span class="rating">4.4 ★</span>
+                    </div>
+                    <p>Italian, Pizza, Pasta</p>
+                    <div class="restaurant-meta">
+                        <span>₹550 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 32 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80"
+                        alt="Grilled food platter">
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Grill House</h3>
+                        <span class="rating">4.7 ★</span>
+                    </div>
+                    <p>BBQ, Grills, North Indian</p>
+                    <div class="restaurant-meta">
+                        <span>₹650 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                        alt="Delicious cheesy meal">
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>Foodie Express</h3>
+                        <span class="rating">4.1 ★</span>
+                    </div>
+                    <p>Fast Food, Snacks</p>
+                    <div class="restaurant-meta">
+                        <span>₹250 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 20 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80"
+                        alt="Indian vegetarian meal">
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-title">
+                        <h3>South Spice</h3>
+                        <span class="rating">4.5 ★</span>
+                    </div>
+                    <p>South Indian, Vegetarian</p>
+                    <div class="restaurant-meta">
+                        <span>₹280 for two</span>
+                        <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="section" id="offers">
+        <div class="section-heading">
+            <div>
+                <h2>Special offers</h2>
+                <p>More flavour, more savings</p>
+            </div>
+        </div>
+
+        <div class="offer-grid">
+            <article class="offer-card offer-one">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                    alt="Burger meal offer">
+                <div class="offer-info">
+                    <span class="offer-tag">LIMITED TIME</span>
+                    <h3>Burger Bonanza</h3>
+                    <p>Get 40% off on selected burger meals.</p>
+                    <a href="#restaurants" class="offer-btn">Order Now</a>
+                </div>
+            </article>
+
+            <article class="offer-card offer-two">
+                <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80"
+                    alt="Pizza offer">
+                <div class="offer-info">
+                    <span class="offer-tag">WEEKEND SPECIAL</span>
+                    <h3>Pizza Party</h3>
+                    <p>Save 25% on your favourite pizzas.</p>
+                    <a href="#restaurants" class="offer-btn">Order Now</a>
+                </div>
+            </article>
+
+            <article class="offer-card offer-three">
+                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"
+                    alt="Indian food offer">
+                <div class="offer-info">
+                    <span class="offer-tag">FOODIE DEAL</span>
+                    <h3>Spice & Save</h3>
+                    <p>Enjoy 30% off selected Indian dishes.</p>
+                    <a href="#restaurants" class="offer-btn">Order Now</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <a href="#" class="footer-logo">zomato</a>
+            <span>Discover great food, every day.</span>
+        </div>
+
+        <div class="footer-grid">
+            <div>
+                <h3>About Zomato</h3>
+                <a href="#footer">Who We Are</a>
+                <a href="#footer">Blog</a>
+                <a href="#footer">Careers</a>
+            </div>
+
+            <div>
+                <h3>Restaurant Partners</h3>
+                <a href="#footer">Partner With Us</a>
+                <a href="#footer">Restaurant App</a>
+                <a href="#footer">Business Support</a>
+            </div>
+
+            <div>
+                <h3>Customer Support</h3>
+                <a href="#footer">Help Centre</a>
+                <a href="#footer">Contact Us</a>
+                <a href="#footer">Report an Issue</a>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <a href="#footer">Privacy Policy</a>
+                <a href="#footer">Terms and Conditions</a>
+                <a href="#footer">Cookie Policy</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Zomato Homepage Clone. Created for educational purposes.</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com/" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
